@@ -1,18 +1,17 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Formulario {
+  margin-top: 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Operations {
+  margin-top: 40px;
 }
 
+.Calculator {
+  margin-top: 55px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

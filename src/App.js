@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Calculator from './components/calculator';
+import Formulario from './components/formulario';
+import Operation from './components/operations';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from './main';
+import "./grados.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (<>
+  <BrowserRouter><Routes>
+    <Route path="/calculadora" element={<Calculator/>}></Route>
+    <Route path="/formulario" element={<Formulario/>}></Route>
+    <Route path="/operaciones" element={<Operation/>}></Route>
+    </Routes><Main/></BrowserRouter>
+  </>
   );
 }
 
